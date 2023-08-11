@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15%;
+
+      }
+      input{
+        width: 15%;
+        text-align: center;
+      }
+      input,
+      button {
+        margin: 12px 5px;
+      }
+      button {
+        cursor: pointer;
+        margin-left: 45%;
+      }
+
+      a {
+        font-weight: 700;
+        text-decoration: none;
+        color: palevioletred;
+      }
+
+
+
+
+    </style>
+    <title>Comparador Lógico</title>
+  </head>
+  <body>
+    <header>
+      <h1 align=center>Comparador Lógico</h1>
+    </header>
+    <main>
+      <input type="number" id="first" placeholder="0">
+      <select name="" id="operator">
+        <option value="maior"> > (maior)</option>
+        <option value="menor"> < (menor)</option>
+        <option value="maiorIg"> >= (maior igual)</option>
+        <option value="menorIg"> <= (menor igual)</option>
+        <option value="ig"> == (igual)</option>
+        <option value="dif"> != (diferente)</option>
+      </select>
+      <input type="number" id="second" placeholder="0">
+      <input type="button" value="Comparar" onclick="compare()" >
+      <input type="text" placeholder="Resultado " id="result">
+      <br>
+      <button onclick="toReplace()"><i class="ph ph-arrows-counter-clockwise"></i></button>
+    </main>
+    <footer>
+
+      <p align="center">
+        Feito por
+        <a href="https://www.linkedin.com/in/tthayza-oliveira/" target="blank"
+          >Thayza Oliveira</a
+        >
+    </footer>
+    </p>
+    <script src="comparador.js"></script>
+  </body>
+</html>
